@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  display: block;
+}
+
+body {
+  font-family: "Outfit";
+  font-size: 18px;
+  color: hsl(215, 51%, 70%);
+  background-color: hsl(217, 54%, 11%);
+  line-height: 2;
+}
+
+hr {
+  margin: 10px 0;
+  border: 1px solid hsl(215, 32%, 27%);
+}
+
+span {
+  color: hsl(0, 0%, 100%);
+}
+
+p {
+  line-height: normal;
+}
+
+h4 {
+  padding: 10px 0;
+}
+
+/* Main */
+.main-box {
+  padding: 30px;
+  background-color: hsl(216, 50%, 16%);
+  width: 380px;
+  height: 630px;
+  border-radius: 15px;
+  margin: 120px auto;
+}
+
+@media screen and (max-width: 1440px){
+  .main-box{
+    min-width: 375px;
+  }
+}
+
+/* Card-image*/
+.image {
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+.cube-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.image:hover .overlay {
+  opacity: 0.6;
+}
+
+.overlay {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 96.5%;
+  background-color: hsl(178, 100%, 50%);
+  border-radius: 10px;
+}
+
+.overlay-icon {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fa-eye{
+  color: white;
+  opacity: 1;
+}
+
+/* Card-content */
+span:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.heading:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.heading {
+  color: hsl(0, 0%, 100%);
+}
+
+.inner-box p {
+  margin: 10px 0;
+}
+
+.inner-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-heading1 {
+  color: hsl(178, 100%, 50%);
+}
+
+/* Last-section */
+.avatar {
+  width: 35px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.last {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icons {
+  margin: 0 5px 0 0;
+}
