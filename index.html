@@ -5,15 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
   <link rel="stylesheet" href="css/styles.css">
 
-  <title>Frontend Mentor | NFT preview card component</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
+  </script>
+  <title>Frontend Mentor | News homepage</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -30,31 +34,111 @@
 
 <body>
 
-  <div class="main-box">
-    <div class="inner-box">
-      <div class="image">
-        <img class="cube-img" src="images/image-equilibrium.jpg" alt="eqilibrium-box">
-        <div class="overlay">
-          <div class="overlay-icon">
-            <i class="fa-solid fa-eye"></i>
+  <nav class="navbar navbar-expand-md navbar-light padding">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="assets/images/logo.svg" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" name="button">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item-active">
+            <a class="nav-link" href="#">New</a>
+          </li>
+          <li class="nav-item-active">
+            <a class="nav-link" href="#">Popular</a>
+          </li>
+          <li class="nav-item-active">
+            <a class="nav-link" href="#">Trending</a>
+          </li>
+          <li class="nav-item-active">
+            <a class="nav-link" href="#">Categories</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+  </nav>
+
+
+  <!-- Main Section -->
+  <div class="container-fluid padding">
+    <div class="row">
+      <div id="content-left" class="col-sm-12 col-lg-8">
+        <img id="desktop" class="image-fluid" src="assets/images/image-web-3-desktop.jpg">
+        <img id="mobile" class="image-fluid" src="assets/images/image-web-3-mobile.jpg" alt="">
+        <div class="row img-bot-content">
+          <div class="col-sm-12 col-lg-6">
+            <h1>The Bright Future of Web 3.0?</h1>
+          </div>
+          <div class="col-sm-12 col-lg-6">
+            <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
+              But is it really fulfilling its promise?</p>
+            <button id="button" class="btn btn-primary btn-lg" type="button" name="button">Read more</button>
           </div>
         </div>
       </div>
 
-      <h2 class="heading">Equilibrium #3429</h2>
-      <p>Our Equilibrium collection promotes balance and calm.</p>
-      <div class="inner-menu">
-        <h4 class="menu-heading1"><i class="fa-brands fa-ethereum icons"></i> 0.041 ETH</h4>
-        <h4 class="menu-heading2"><i class="fa-solid fa-clock icons"></i> 3 days left</h4>
-      </div>
-      <hr>
-      <div class="last">
-        <img class="avatar" src="images/image-avatar.png" alt="avatar">
-        <p>Creation of <span>Jules Wyvern</span></p>
+      <div id="content-right" class="col-sm-12 col-lg-4">
+        <h1>New</h1>
+        <h3>Hydrogen VS Electric Cars</h3>
+        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        <hr class="my-4">
+        <h3>The Downsides of AI Artistry</h3>
+        <p>What are the possible adverse effects of on-demand AI image generation?</p>
+        <hr class="my-4">
+        <h3>Is VC Funding Drying Up?</h3>
+        <p>rivate funding by VC firms is down 50% YOY. We take a look at what that means.</p>
       </div>
 
     </div>
   </div>
+
+  <!-- Bottom-Contents -->
+
+  <div class="container-fluid bot-content">
+    <div class="row">
+      <div class="col-sm-12 col-lg-4">
+        <div class="d-flex">
+          <img id="bot-img" src="assets/images/image-retro-pcs.jpg" alt="">
+          <div  class="flex-column">
+            <h2>01</h2>
+            <h3>Reviving Retro PCs</h3>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm-12 col-lg-4">
+        <div class="d-flex">
+          <img id="bot-img" src="assets/images/image-top-laptops.jpg" alt="">
+          <div class="flex-column">
+            <h2>02</h2>
+            <h3>Top 10 Laptops of 2022</h3>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="col-sm-12 col-lg-4">
+        <div class="d-flex">
+          <img id="bot-img" src="assets/images/image-gaming-growth.jpg" alt="">
+          <div class="flex-column">
+            <h2>03</h2>
+            <h3>The Growth of Gaming</h3>
+            <p>ow the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
 
 
   <div class="attribution">
